@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { add, minus } from '../assets/images';
 // eslint-disable-next-line react/prop-types
 const Question = ({ question, answer }) => {
   const [showAnswer, setShowAnswer] = useState(false);
@@ -13,7 +14,7 @@ const Question = ({ question, answer }) => {
       <h1 className="font-manrope text-[#1C1C1C] text-[20px]">
         {question} 
       </h1>
-      <button className='pr-10' onClick={handleToggleAnswer}>{!showAnswer ? (<img src='src/assets/images/add.png' alt='add'/>):(<img src='src/assets/images/minus.png' alt='add'/>) }
+      <button className='pr-10' onClick={handleToggleAnswer}>{!showAnswer ? (<img src={add} alt='add'/>):(<img src={minus} alt='add'/>) }
       </button>
       </div>
      {showAnswer && <div className="answer"><h1 className=" text-[#617275] text-[15px]">{answer}</h1></div>}

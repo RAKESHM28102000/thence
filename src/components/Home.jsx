@@ -1,3 +1,4 @@
+import { girl, rocket, smallarrow, spark } from "../assets/images"
 import About from "./About"
 import Footer from "./Footer"
 import Header from "./Header"
@@ -16,18 +17,18 @@ const Home = () => {
    <div className="relative w-[60%] h-[600px]">
       {/* girl box */}
       <div className="bg-green-300 rounded-2xl w-[70%] h-[80%] absolute left-[80px] top-[50px] ">
-        <img src="src/assets/images/girl.png" alt="girl" className="w-full h-full rounded-2xl"/>
+        <img src={girl} alt="girl" className="w-full h-full rounded-2xl"/>
       </div>
       {/* first box */}
       <div className="shadow-md absolute top-[150px] -left-[50px] z-10 text-left w-[270px] h-[230px] bg-white rounded-lg">
       <div className="relative">
-       <h1 className="text-[54px] font-bold"><img className="inline-block absolute -top-10 -left-10" src="src/assets/images/spark, sparkle, 26.png"/>40%</h1>
+       <h1 className="text-[54px] font-bold"><img className="inline-block absolute -top-10 -left-10" src={spark}/>40%</h1>
        <p className="text-lg text-[#828282]">Achieved reduction in project execution time by optimising team availability</p>
        </div>
       </div>
    {/* second box */}
       <div className="shadow-md absolute bottom-[100px] left-[10px] z-10 flex items-center justify-around  text-left w-[240px] h-[90px] bg-white rounded-full">
-      <img className="inline-block " width={"32px"} height={"32px"} src="src/assets/images/rocket.png"/>
+      <img className="inline-block " width={"32px"} height={"32px"} src={rocket}/>
        <div className="text-left">
        <h1 className="text-[24px] font-bold">10 days</h1>
        <p className="text-[16px] text-[#828282]">Staff Deployment</p>
@@ -55,7 +56,7 @@ const Home = () => {
    <div className="w-[245px] h-[77px] rounded-full border border-white flex justify-center 
    items-center bg-[#1C1C1C]  hover:bg-[#4E4E4E]  ">
    <button className="text-center text-lg text-[#FFFFFF] flex justify-start gap-2 items-center">
-    Explore more <span><img src="src/assets/images/small-arrow.png"/></span>
+    Explore more <span><img src={smallarrow}/></span>
    </button></div>
    </div>
  </div>

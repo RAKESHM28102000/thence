@@ -2,6 +2,7 @@ import { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import { MdError } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { logo } from "../assets/images";
 
 
 const Login = () => {
@@ -74,7 +75,7 @@ const Login = () => {
     <div className="flex min-h-[100vh] flex-col justify-start w-[90%] mx-auto px-4 py-4">
         <div className="flex justify-between items-center"> 
         <div className="flex justify-center items-center pl-8">
-         <img src="src/assets/images/logo.png" alt="logo" className="w-[120px] h-[30px]"/>
+         <img src={logo} alt="logo" className="w-[120px] h-[30px]"/>
         </div>
         <div onClick={()=>navigate("/")} className="rounded-full border-1 cursor-pointer bg-slate-300 size-[50px] flex items-center  justify-center"><RxCross1 className="size-[30px]"/></div>
         </div>

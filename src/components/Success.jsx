@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { correct, logo } from "../assets/images";
 const Success = () => {
     const [time,setTime]=useState(5);
     const navigate=useNavigate();
@@ -33,13 +34,13 @@ const Success = () => {
     <div className="flex min-h-[100vh] flex-col justify-between w-[90%] mx-auto px-4 py-4 pb-10">
         <div className="flex justify-between items-center"> 
         <div className="flex justify-center items-center pl-8">
-         <img src="src/assets/images/logo.png" alt="logo" className="w-[120px] h-[30px]"/>
+         <img src={logo} alt="logo" className="w-[120px] h-[30px]"/>
         </div>
         <div className="rounded-full border-1 bg-slate-300 size-[50px] flex items-center  justify-center"></div>
         </div>
 
         <div className="flex flex-col items-center ">
-        <img src="src/assets/images/correct.png" alt="logo" className="size-[80px]"/>
+        <img src={correct} alt="logo" className="size-[80px]"/>
         </div>
         <div className="flex flex-col items-center ">
          <p className="font-grace text-[36px] text-[#2DA950]">Success Submitted</p>

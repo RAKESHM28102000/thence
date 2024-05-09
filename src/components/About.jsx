@@ -1,3 +1,4 @@
+import { arrowbig } from "../assets/images";
 import Question from "./Question"
 
 const About = () => {
@@ -27,7 +28,7 @@ const About = () => {
          <h1 className="text-[#1C1C1C] text-[60px] font-manrope font-semibold">Ask Questions</h1>
          </div>
          <div className="flex justify-center items-center">
-          <img src="src/assets/images/arrow.png" className='w-[490px] h-[510px]' alt="sym"/>
+          <img src={arrowbig} className='w-[490px] h-[510px]' alt="sym"/>
          </div>
       </div>
    {/* second content */}
